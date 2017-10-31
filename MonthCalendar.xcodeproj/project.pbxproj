@@ -10,7 +10,36 @@
 		11AFA12F1FA860FF00D949DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFA12E1FA860FF00D949DD /* AppDelegate.swift */; };
 		11AFA1311FA860FF00D949DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AFA1301FA860FF00D949DD /* Assets.xcassets */; };
 		11AFA1341FA860FF00D949DD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AFA1321FA860FF00D949DD /* MainMenu.xib */; };
+		11AFA15D1FA863A000D949DD /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AFA15C1FA863A000D949DD /* NotificationCenter.framework */; };
+		11AFA1601FA863A000D949DD /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFA15F1FA863A000D949DD /* TodayViewController.swift */; };
+		11AFA1631FA863A000D949DD /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AFA1611FA863A000D949DD /* TodayViewController.xib */; };
+		11AFA1671FA863A000D949DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11AFA1651FA863A000D949DD /* InfoPlist.strings */; };
+		11AFA16B1FA863A000D949DD /* MonthCalendarWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11AFA15A1FA863A000D949DD /* MonthCalendarWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11AFA1691FA863A000D949DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11AFA1231FA860FF00D949DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11AFA1591FA863A000D949DD;
+			remoteInfo = MonthCalendarWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11AFA16F1FA863A000D949DD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				11AFA16B1FA863A000D949DD /* MonthCalendarWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11AFA12B1FA860FF00D949DD /* MonthCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonthCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +48,13 @@
 		11AFA1331FA860FF00D949DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		11AFA1351FA8610000D949DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11AFA1361FA8610000D949DD /* MonthCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MonthCalendar.entitlements; sourceTree = "<group>"; };
+		11AFA15A1FA863A000D949DD /* MonthCalendarWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MonthCalendarWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		11AFA15C1FA863A000D949DD /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		11AFA15F1FA863A000D949DD /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		11AFA1621FA863A000D949DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		11AFA1641FA863A000D949DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AFA1661FA863A000D949DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		11AFA1681FA863A000D949DD /* MonthCalendarWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MonthCalendarWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11AFA1571FA863A000D949DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AFA15D1FA863A000D949DD /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				11AFA12D1FA860FF00D949DD /* MonthCalendar */,
+				11AFA15E1FA863A000D949DD /* MonthCalendarWidget */,
+				11AFA15B1FA863A000D949DD /* Frameworks */,
 				11AFA12C1FA860FF00D949DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				11AFA12B1FA860FF00D949DD /* MonthCalendar.app */,
+				11AFA15A1FA863A000D949DD /* MonthCalendarWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +107,26 @@
 			path = MonthCalendar;
 			sourceTree = "<group>";
 		};
+		11AFA15B1FA863A000D949DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11AFA15C1FA863A000D949DD /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11AFA15E1FA863A000D949DD /* MonthCalendarWidget */ = {
+			isa = PBXGroup;
+			children = (
+				11AFA15F1FA863A000D949DD /* TodayViewController.swift */,
+				11AFA1611FA863A000D949DD /* TodayViewController.xib */,
+				11AFA1641FA863A000D949DD /* Info.plist */,
+				11AFA1651FA863A000D949DD /* InfoPlist.strings */,
+				11AFA1681FA863A000D949DD /* MonthCalendarWidget.entitlements */,
+			);
+			path = MonthCalendarWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,15 +137,34 @@
 				11AFA1271FA860FF00D949DD /* Sources */,
 				11AFA1281FA860FF00D949DD /* Frameworks */,
 				11AFA1291FA860FF00D949DD /* Resources */,
+				11AFA16F1FA863A000D949DD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11AFA16A1FA863A000D949DD /* PBXTargetDependency */,
 			);
 			name = MonthCalendar;
 			productName = MonthCalendar;
 			productReference = 11AFA12B1FA860FF00D949DD /* MonthCalendar.app */;
 			productType = "com.apple.product-type.application";
+		};
+		11AFA1591FA863A000D949DD /* MonthCalendarWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11AFA16E1FA863A000D949DD /* Build configuration list for PBXNativeTarget "MonthCalendarWidget" */;
+			buildPhases = (
+				11AFA1561FA863A000D949DD /* Sources */,
+				11AFA1571FA863A000D949DD /* Frameworks */,
+				11AFA1581FA863A000D949DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonthCalendarWidget;
+			productName = MonthCalendarWidget;
+			productReference = 11AFA15A1FA863A000D949DD /* MonthCalendarWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,6 +177,10 @@
 				ORGANIZATIONNAME = "Tri Le";
 				TargetAttributes = {
 					11AFA12A1FA860FF00D949DD = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					11AFA1591FA863A000D949DD = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				11AFA12A1FA860FF00D949DD /* MonthCalendar */,
+				11AFA1591FA863A000D949DD /* MonthCalendarWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +215,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11AFA1581FA863A000D949DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AFA1631FA863A000D949DD /* TodayViewController.xib in Resources */,
+				11AFA1671FA863A000D949DD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,7 +235,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11AFA1561FA863A000D949DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AFA1601FA863A000D949DD /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11AFA16A1FA863A000D949DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11AFA1591FA863A000D949DD /* MonthCalendarWidget */;
+			targetProxy = 11AFA1691FA863A000D949DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		11AFA1321FA860FF00D949DD /* MainMenu.xib */ = {
@@ -144,6 +260,22 @@
 				11AFA1331FA860FF00D949DD /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		11AFA1611FA863A000D949DD /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11AFA1621FA863A000D949DD /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		11AFA1651FA863A000D949DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11AFA1661FA863A000D949DD /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +390,7 @@
 		11AFA13A1FA8610000D949DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MonthCalendar/MonthCalendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -273,6 +406,7 @@
 		11AFA13B1FA8610000D949DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MonthCalendar/MonthCalendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -281,6 +415,36 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TL.MonthCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		11AFA16C1FA863A000D949DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MonthCalendarWidget/MonthCalendarWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MonthCalendarWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TL.MonthCalendar.MonthCalendarWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		11AFA16D1FA863A000D949DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MonthCalendarWidget/MonthCalendarWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MonthCalendarWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TL.MonthCalendar.MonthCalendarWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -302,6 +466,15 @@
 			buildConfigurations = (
 				11AFA13A1FA8610000D949DD /* Debug */,
 				11AFA13B1FA8610000D949DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11AFA16E1FA863A000D949DD /* Build configuration list for PBXNativeTarget "MonthCalendarWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AFA16C1FA863A000D949DD /* Debug */,
+				11AFA16D1FA863A000D949DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
