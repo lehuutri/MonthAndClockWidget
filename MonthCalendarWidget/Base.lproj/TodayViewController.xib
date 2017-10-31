@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="MonthCalendarWidget" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="tCZ-Ut-CYp" id="6kB-Bb-slo"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="148"/>
+            <subviews>
+                <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tCZ-Ut-CYp" userLabel="datePicker">
+                    <rect key="frame" x="10" y="0.0" width="284" height="148"/>
+                    <datePickerCell key="cell" borderStyle="bezel" alignment="left" datePickerMode="range" datePickerStyle="clockAndCalendar" id="cFk-yj-wlU">
+                        <font key="font" metaFont="system"/>
+                        <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                            <!--1982-02-12 16:00:00 +0000-->
+                        </date>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES" second="YES"/>
+                    </datePickerCell>
+                </datePicker>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tCZ-Ut-CYp" secondAttribute="trailing" id="5YZ-zR-4Pr" userLabel="trailing = Calendar Clock Date Picker.trailing"/>
+                <constraint firstAttribute="bottom" secondItem="tCZ-Ut-CYp" secondAttribute="bottom" id="IKb-Yb-56u" userLabel="bottom = Calendar Clock Date Picker.bottom"/>
+                <constraint firstItem="tCZ-Ut-CYp" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="q46-sz-U82" userLabel="Calendar Date Picker.leading = leading"/>
+                <constraint firstItem="tCZ-Ut-CYp" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="w8T-Bk-lKj" userLabel="Calendar Date Picker.top = top"/>
+            </constraints>
+            <point key="canvasLocation" x="58.5" y="214"/>
+        </customView>
+    </objects>
+</document>
